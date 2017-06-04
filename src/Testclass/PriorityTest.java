@@ -3,7 +3,7 @@ package  Testclass;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
-public class annotations {
+public class PriorityTest {
 
 
 	@Test (priority=3)

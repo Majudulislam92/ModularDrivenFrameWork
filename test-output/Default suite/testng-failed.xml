@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Testclass.annotations">
+      <class name="Testclass.AnnotationTest">
         <methods>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
           <include name="skiptest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- Testclass.annotations -->
+      </class> <!-- Testclass.AnnotationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

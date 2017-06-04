@@ -1,64 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="1" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44" started-at="2017-06-04T15:19:41Z" finished-at="2017-06-04T15:19:41Z">
+  <suite name="Default suite" duration-ms="44" started-at="2017-06-04T16:12:32Z" finished-at="2017-06-04T16:12:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44" started-at="2017-06-04T15:19:41Z" finished-at="2017-06-04T15:19:41Z">
-      <class name="Testclass.annotations">
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:Testclass.annotations@7823a2f9]" name="loginTest" duration-ms="10" started-at="2017-06-04T11:19:41Z" finished-at="2017-06-04T11:19:41Z">
+    <test name="Default test" duration-ms="44" started-at="2017-06-04T16:12:32Z" finished-at="2017-06-04T16:12:32Z">
+      <class name="Testclass.AnnotationTest">
+        <test-method status="PASS" signature="beforesuite()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforesuite" is-config="true" duration-ms="9" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:Testclass.AnnotationTest@59f99ea]" name="loginTest" duration-ms="7" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="changepassword()[pri:2, instance:Testclass.annotations@7823a2f9]" name="changepassword" duration-ms="2" started-at="2017-06-04T11:19:41Z" finished-at="2017-06-04T11:19:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="changepassword()[pri:2, instance:Testclass.AnnotationTest@59f99ea]" name="changepassword" duration-ms="2" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changepassword -->
-        <test-method status="PASS" signature="logoutTest()[pri:3, instance:Testclass.annotations@7823a2f9]" name="logoutTest" duration-ms="1" started-at="2017-06-04T11:19:41Z" finished-at="2017-06-04T11:19:41Z">
+        <test-method status="PASS" signature="logoutTest()[pri:3, instance:Testclass.AnnotationTest@59f99ea]" name="logoutTest" duration-ms="2" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method status="SKIP" signature="skiptest()[pri:4, instance:Testclass.annotations@7823a2f9]" name="skiptest" duration-ms="2" started-at="2017-06-04T11:19:41Z" finished-at="2017-06-04T11:19:41Z">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[im still working on it]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: im still working on it
-	at Testclass.annotations.skiptest(annotations.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="skiptest()[pri:4, instance:Testclass.AnnotationTest@59f99ea]" name="skiptest" duration-ms="1" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- skiptest -->
-      </class> <!-- Testclass.annotations -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Testclass.AnnotationTest@59f99ea]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-06-04T12:12:32Z" finished-at="2017-06-04T12:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Testclass.AnnotationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
